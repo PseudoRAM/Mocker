@@ -67,12 +67,12 @@ class Mocker {
         
         if(locationData.get !== undefined) {
           if(locationData.get.responses['200'] !== undefined) {
-            const swaggerResponse =  buildSwaggerResponse(locationData.get.responses['200'].schema.items);
+            const swaggerResponse =  buildSwaggerResponse(locationData.get.responses['200'].schema);
             this.get(endPoint, () => {return swaggerResponse;})
           }
         } else if(locationData.post !== undefined) {
           if(locationData.post.responses['200'] !== undefined) {
-            const swaggerResponse =  buildSwaggerResponse(locationData.post.responses['200'].schema.items);
+            const swaggerResponse =  buildSwaggerResponse(locationData.post.responses['200'].schema);
             this.post(endPoint, () => {return swaggerResponse;})
           }
         }
