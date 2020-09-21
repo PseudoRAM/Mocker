@@ -1,5 +1,5 @@
 # Mocker
-**Mocker** is a JavaScript module that allows APIs to be stood up and exposed in minutes to allow UI to be developed without the need of a functioning back end.
+**Mocker** is a node app that allows APIs to be stood up and exposed in minutes to allow UI to be developed without the need of a functioning back end.
 
 ## Usage
 
